@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+  <title>state capital look up</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-md-6 mx-auto">
+
+        <h3 class="text-center mb-3"><i class="fa-solid fa-flag-usa"></i> State Capital Look Up</h3>
+
+        <form class="form-group">
+          <input type="text" id="search" class="form-control form-control-lg" placeholder="Enter state name or abbreviation">
+        </form>
+
+        <div id="match-list"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getRepos()">get repos</button>
+    <p id="show"></p>
+
+    
+    <script>
+
+      function getRepos() {
+        let myRequest = new XMLHttpRequest();
+
+        myRequest.onreadystatechange = function () {
+          if (this.readyState === 4 && this.status === 200) {
+            document.querySelector('#show').innerHTML = this.responseText;
+            console.log(JSON.parse(this.responseText)[0].name);
+          }
+        };
+
+        myRequest.open(
+          "GET",
+          "file.json",
+          true
+        );
+        myRequest.send();
+      }
+      //https://api.github.com/users/AhmedAzzam-Web/repos
+    </script>
+  </body>
+</html>
+ -->
